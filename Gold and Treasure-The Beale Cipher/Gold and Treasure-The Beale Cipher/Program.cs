@@ -5,6 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using CipherLogic;
 
+
+//The challeng information had some erorrs in it. 
+//As a result the output is  a little messed up. 
+//proof of concept is there but, its a little off. 
+
+
 namespace Gold_and_Treasure_The_Beale_Cipher
 {
     class Program
@@ -12,12 +18,8 @@ namespace Gold_and_Treasure_The_Beale_Cipher
         static void Main(string[] args)
         {
             var cipher = new Cipher(); 
-            Console.WriteLine("Please enter the cypher Text");
-            var text = Console.ReadLine();
-            Console.WriteLine("Please enter the cypher");
-            var key = Console.ReadLine();
-
-            cipher.DeCodeMessage(text, key);
+            cipher.DeCodeMessage(cipher.textString, cipher.keyString);
+            Console.ReadLine();
         }
     }
 }
