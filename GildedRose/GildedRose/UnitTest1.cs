@@ -1,12 +1,17 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using GildedRose;
+using System.IO;
+using System.Text;
+
+
+
+
 
 namespace GildedRose
 {
-
-    
-    
+   
     [TestClass]
     public class UnitTest1
     {
@@ -18,5 +23,7 @@ namespace GildedRose
             app.UpdateQuality();
             Assert.AreEqual("fixme", Items[0].Name);
         }
+
+       
     }
 }
